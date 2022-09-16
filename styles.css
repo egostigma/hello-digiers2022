@@ -89,11 +89,10 @@ body {
   border: none;
 }
 
-
-@media screen and (max-width: 454px) {
+@media screen and (max-width: 768px) {
   html,
   body {
-    max-width: 393px;
+    /* max-width: 393px; */
   }
   .banner-wrapper .banner {
     width: 100%;
@@ -107,18 +106,25 @@ body {
   .section .content-wrapper {
     padding: 0 0;
   }
+}
+
+
+@media screen and (max-width: 1171px) {
   .newsletter-wrapper {
     padding: 0 1.25rem;
   }
   .newsletter-wrapper, 
   .newsletter-wrapper .form-wrapper {
+    display: flex;
     flex-direction: column;
   }
   .newsletter-wrapper .form-wrapper input {
     width: 100%;
+    margin-left: 4rem;
   }
   .newsletter-wrapper .form-wrapper button {
     margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 100%;
   }
   .newsletter-wrapper .title {
